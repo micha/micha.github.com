@@ -11,7 +11,7 @@
         margin: 0 auto;
         padding: 0;
       }
-      div.top_content {
+      div.top_content, div.bottom_content {
         margin-left: 20px;
       }
       h1, th, a {
@@ -29,7 +29,6 @@
   <body>
     <div class="top_content">
       <h1 class="title">micha niskin</h1>
-      <p><code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code></p>
     </div>
     <table cellspacing="20px" cellpadding="0">
       <caption><p>A selection of yaks I've shaved:</p></caption>
@@ -119,6 +118,9 @@
         </td>
       </tr>
     </table>
+    <div class="bottom_content">
+      <code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code>
+    </div>
        
   </body>
 </html>
