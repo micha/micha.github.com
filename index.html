@@ -31,6 +31,7 @@
   </head>
   <body>
     <h1 class="title">micha niskin</h1>
+    <p><code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code></p>
     <table cellspacing="20px" cellpadding="0">
       <caption><p>A selection of yaks I've shaved:</p></caption>
       <tr>
