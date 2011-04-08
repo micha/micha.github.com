@@ -28,10 +28,12 @@
       }
     </style>
     <script type="text/javascript">
-      document.getElementById("asdf").href = "mailto:micha@asdf.com";
+      function fill_it() {
+        document.getElementById("asdf").href = "mailto:micha@asdf.com";
+      }
     </script>
   </head>
-  <body>
+  <body onload="fill_it">
     <div class="top_content">
       <h1 class="title">micha niskin <a id="asdf">link</a></h1>
     </div>
