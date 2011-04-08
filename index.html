@@ -5,17 +5,17 @@
     <style type="text/css">
       body {
         background: #151515;
-        color: #FFF569;
+        color: #CBC689;
         font-family: monospace;
         width: 680px;
         margin: 0 auto;
         padding: 0;
       }
       h1.title {
-        margin-left: 20px;
+        color: #FFF569;
       }
-      p {
-        color: #CBC689;
+      div.top_content {
+        margin-left: 20px;
       }
       a {
         color: #FFF569;
@@ -30,8 +30,10 @@
     </style>
   </head>
   <body>
-    <h1 class="title">micha niskin</h1>
-    <p><code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code></p>
+    <div class="top_content">
+      <h1 class="title">micha niskin</h1>
+      <p><code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code></p>
+    </div>
     <table cellspacing="20px" cellpadding="0">
       <caption><p>A selection of yaks I've shaved:</p></caption>
       <tr>
