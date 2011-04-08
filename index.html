@@ -3,7 +3,7 @@
   <head>
     <title>Micha Niskin</title>
     <style type="text/css">
-      body {
+      body, * {
         background: #151515;
         color: #CBC689;
         font-family: monospace;
@@ -11,7 +11,10 @@
         margin: 0 auto;
         padding: 0;
       }
-      div.top_content, div.bottom_content {
+      body {
+        padding-bottom: 80px;
+      }
+      div.top_content {
         margin-left: 20px;
       }
       h1, th, a {
@@ -23,9 +26,6 @@
       }
       th {
         text-align: left;
-      }
-      div.bottom_content code {
-        font-size: x-small;
       }
     </style>
   </head>
@@ -121,9 +121,5 @@
         </td>
       </tr>
     </table>
-    <div class="bottom_content">
-      <code>seq 100|awk '$1*10/3%10==0{printf("Fizz")}$1*10/5%10==0{printf("Buzz")}{print $1}'|sed 's/z[0-9]*$/z/'</code>
-    </div>
-       
   </body>
 </html>
