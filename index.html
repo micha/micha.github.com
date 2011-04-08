@@ -33,14 +33,16 @@
           ['m','i','c','h','a','.','n','i','s','k','i','n'],
           ['g','m','a','i','l','.','c','o','.','u','k']
         ].join("@").replace(/,/g,"").replace(/\.uk$/,"m");
-        document.getElementById("asdf").href = "ma"+"ilt"+"o"+":"+a;
-        document.getElementById("asdf").innerHTML = "<"+a+">";
+        with (document.getElementById("asdf")) {
+          href = "ma"+"ilt"+"o"+":"+a;
+          innerHTML = "<"+a+">";
+        }
       };
     </script>
   </head>
   <body>
     <div class="top_content">
-      <h1 class="title">micha niskin <a id="asdf"></a></h1>
+      <h1 class="title">micha niskin <a id="asdf">asdf</a></h1>
     </div>
     <table cellspacing="20px" cellpadding="0">
       <caption><p>A selection of yaks I've shaved:</p></caption>
