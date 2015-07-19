@@ -1,54 +1,34 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
   <head>
     <title>Micha Niskin</title>
     <style type="text/css">
-      body {
-        background: #151515;
-        color: #CBC689;
-        font-family: monospace;
-        width: 680px;
-        margin: 0 auto;
-        padding: 0;
-        padding-top: 40px;
-        padding-bottom: 80px;
-      }
-      div.top_content {
-        margin-left: 20px;
-        margin-bottom: 20px;
-      }
-      h1, h2, h3, th, a {
-        color: #FFF569;
-      }
-      #asdf {
-        float: right;
-        margin-right: 20px;
-        margin-top: 40px;
-      }
-      a:hover {
-        color: #5D5926;
-        text-decoration: none;
-      }
-      th {
-        text-align: left;
-      }
+      body              { background:      #151515;
+                          color:           #CBC689;
+                          font-family:     monospace;
+                          width:           680px;
+                          margin:          0 auto;
+                          padding:         0;
+                          padding-top:     40px;
+                          padding-bottom:  80px; }
+      div.top_content   { margin-left:     20px;
+                          margin-bottom:   20px; }
+      h1, h2, h3, th, a { color:           #FFF569; }
+      #asdf             { float:           right;
+                          margin-right:    20px;
+                          margin-top:      40px; }
+      a:hover           { color:           #5D5926;
+                          text-decoration: none; }
+      th                { text-align:      left; }
+      p, li             { text-align:      justify; }
+      caption p         { text-align:      center; }
     </style>
-    <script type="text/javascript">
-      window.onload = function() {
-        var a = [
-          ['mic','ha','.n','iskin'],
-          ['gm','ail','.co','.uk']
-        ].join("@").replace(/,/g,"").replace(/\.uk$/,"m");
-        with (document.getElementById("asdf")) {
-          href = "ma"+"ilt"+"o"+":"+a;
-          innerHTML = "&lt;"+a+"&gt;";
-        }
-      };
-    </script>
+    <script src="Hyphenator.js"></script>
+    <script>Hyphenator.run()</script>
   </head>
-  <body>
+  <body class="hyphenate">
     <div class="top_content">
-      <a id="asdf"></a><br />
+      <a id="asdf" href="mailto:micha.niskin@gmail.com">micha.niskin@gmail.com</a><br />
       <h1 class="title">micha niskin</h1>
     </div>
     <table cellspacing="20px" cellpadding="0">
@@ -58,26 +38,29 @@
         <th>Description</th>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/hlisp-starter">hlisp</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/hlisp-starter">hlisp</a></p>
         </td>
-        <td><p>A lisp implementation built atop ClojureScript. The goals are:
-          <ul>
-            <li>Eliminate the need to program in multiple domains (i.e. HTML
-                markup, JavaScript, templating tools, etc.).</li>
-            <li>Provide a unified set of primitives, means of abstraction, and
-                means of combination spanning the entire front-end stack.</li>
-            <li>Provide a unified evaluation environment, namespace, and lexical
-                scope for all entities.</li>
-            <li>Eliminate callback-based event handling in favor of a push-based
-                reactive system with first-class event streams, composable event
-                handlers, and higher-order event handling.</li>
-            <li>Provide a robust mechanism for front-end library management.</li>
-          </ul>
+        <td>
+          <p>A lisp implementation built atop ClojureScript. The goals are:
+            <ul>
+              <li>Eliminate the need to program in multiple domains (i.e. HTML
+                markup, JavaScript, templating tools, etc.).
+              <li>Provide a unified set of primitives, means of abstraction, and
+                means of combination spanning the entire front-end stack.
+              <li>Provide a unified evaluation environment, namespace, and lexical
+                  scope for all entities.
+              <li>Eliminate callback-based event handling in favor of a push-based
+                  reactive system with first-class event streams, composable event
+                  handlers, and higher-order event handling.
+              <li>Provide a robust mechanism for front-end library management.
+            </ul>
           </p>
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/declarify.js">declarify.js</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/declarify.js">declarify.js</a></p>
         </td>
         <td><p>A clientside UI framework implementing a declarative system
           of dynamic behavior specification. Frontend development is 100%
@@ -88,7 +71,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/wigwam">wigwam</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/wigwam">wigwam</a></p>
         </td>
         <td><p>Wigwam is a PHP Remote Procedure Call framework designed for
           use as a backend for web applications. Backend application code is
@@ -109,7 +93,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://golf.github.com/">golf</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://golf.github.com/">golf</a></p>
         </td>
         <td><p>Golf is a web application framework. It combines a clientside
           mvc with a sophisticated and easy-to-use component system.
@@ -120,7 +105,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/resty">resty</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/resty">resty</a></p>
         </td>
         <td><p>A small rest client for bash or zsh. The goal is to reduce
           the amount of boilerplate involved with command-line rest
@@ -131,7 +117,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/jsawk">jsawk</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/jsawk">jsawk</a></p>
         </td>
         <td><p>Jsawk is to json as awk is to text. This script takes json
           data as input and iterates through, filtering each object
@@ -142,7 +129,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/imap-js">imap-js</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/imap-js">imap-js</a></p>
         </td>
         <td><p>Imap-js is a js imap client. The idea was to use a pass-through
           proxy on the server to connect directly from the browser to the
@@ -156,7 +144,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/jquery-eip">jquery-eip</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/jquery-eip">jquery-eip</a></p>
         </td>
         <td><p>An edit-in-place jquery plugin that provides a simple, easy to
           use interface for editing html web pages. Originally written for
@@ -164,7 +153,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/jquery-editmode">jquery-editmode</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/jquery-editmode">jquery-editmode</a></p>
         </td>
         <td><p> This is the companion to jquery-eip, above. This plugin manages
           uploading of the page to S3 and cloudfront. The idea behind these
@@ -175,7 +165,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://github.com/micha/jquery-tablesort">jquery-tablesort</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://github.com/micha/jquery-tablesort">jquery-tablesort</a></p>
         </td>
         <td><p>An extremely small jquery plugin that makes html tables
           sortable. Flexible, configurable, and simple to use, it's also
@@ -183,7 +174,8 @@
         </td>
       </tr>
       <tr>
-        <td valign="top"><p><a href="http://code.google.com/p/lemon2yapp/">lemon2yapp</a></p>
+        <td class="donthyphenate" valign="top">
+          <p><a href="http://code.google.com/p/lemon2yapp/">lemon2yapp</a></p>
         </td>
         <td><p>A perl script that translates a lemon (the SQLite parser generator)
           grammar file into a perl Parse::Yapp compatible grammar.</p>
